@@ -1,0 +1,53 @@
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+nav, footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+nav > a {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  margin: 4px;
+}
+
+li.a {
+  list-style-type: square;
+}
+
+li.b {
+  list-style-type: circle;
+}
+
+@media only screen and (min-width: 768px) { 
+	nav { flex-direction: row; }
+  .project-container { display: flex; }
+  .project-container .project-list { width: 20%; }
+  .project-container .project { flex: 1; }
+}
+
+
+.leveltag {
+  border: 1px solid rgb(123, 122, 122);
+  margin: 4px;
+  padding: 1px;
+}
+
+
+
+
+

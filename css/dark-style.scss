@@ -1,0 +1,263 @@
+$background-site-color: #161C20;
+
+
+/* ------------- COLORS ---------------- */
+body {
+  color: #eee;
+  background: $background-site-color;
+  font-family: 'Lato Regular';
+  font-style: normal;
+  font-weight: normal;
+}
+
+p {
+  font-size: 16px;
+}
+
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.topic-title {
+  color: #F5D67B;
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+
+}
+
+a {
+
+  color: #6d22b7;
+}
+
+/* ---------------- List Item --------------- */
+
+// liens niveaux
+.link {
+  a {
+    text-decoration: none;
+    color: #e2d8fc;
+    transition: 0.5s;
+  }
+}
+
+
+li {
+  color: #ffffff;
+  margin: 5px;
+  list-style-type: disc;
+
+  font-size: 1.1em;
+  font-family: 'Lato Regular';
+  font-style: normal;
+  font-weight: normal;
+
+  a {
+    color: #e2d8fc;
+    transition: 0.5s;
+  }
+}
+
+li a:hover {
+  color: #95a5a6;
+}
+
+li::marker {
+  content: "‣    ";
+}
+
+
+li.a::marker {
+  /*   list-style-type: disc; */
+  content: "◆  ";
+  /*   color:#ffff00; */
+  box-shadow: 10px 5px 5px #ffff00;
+  margin-right: 5px;
+}
+
+li.b::marker {
+  content: "◇  ";
+  /* color:#23fe4b; */
+  box-shadow: 0 0 50px #ffff00;
+}
+
+
+
+/* ---------------- MENU PRINCIPAL ------------------ */
+
+nav,
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+
+  padding: 15px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 600;
+
+  >a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+
+    :hover {
+      color: #674bbc;
+    }
+  }
+}
+
+
+/* ----------------- LEVELTAGS ---------------- */
+
+
+.leveltag {
+
+  color: #dedede;
+  /* background: #444444; */
+  background: $background-site-color;
+  border-radius: 15px;
+  font-size: 0.7em;
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 600;
+
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 2px;
+}
+
+
+.leveltag.key {
+
+  a {
+      text-decoration: none;
+  }
+}
+
+.leveltag.notkey {
+  /* background-color: #2b2b2b; */
+  color: #989696;
+
+  /* border: 2px solid rgb(101, 101, 101); */
+  a {
+    text-decoration: none;
+    color: #989696;
+  }
+
+}
+
+
+h2 {
+
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 500;
+}
+
+.singlepage h2 {
+
+  color: #f5ae7b;
+}
+
+.legend {
+
+  background: #242E34;
+
+  border-radius: 10px;
+  width: fit-content;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+}
+
+.topic-section {
+
+  background: #242E34;
+  border-radius: 10px;
+  padding: 8px;
+  padding-top: 0.1px;
+
+  padding-left: 20px;
+  margin: 10px;
+}
+
+.singlepage.topic-section {
+
+  padding-top: 8px;
+}
+
+.menu-lateral {
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+
+
+.A1 {
+
+  color: #f9da82;
+}
+
+.A2 {
+
+  color: #ffac27;
+}
+
+.B1 {
+
+  color: #a2fce0;
+}
+
+.B2 {
+
+  color: #07d162;
+}
+
+.C1 {
+
+  color: #c7a4ff;
+}
+
+
+/* .menu-lateral a:hover {
+  color: #95a5a6;
+} */
+
+
+@media only screen and (min-width: 768px) {
+  nav {
+    flex-direction: row;
+  }
+
+  .project-container {
+    display: flex;
+  }
+
+  .project-container .project-list {
+    width: 25%;
+  }
+
+  .project-container .project {
+    flex: 1;
+  }
+}
